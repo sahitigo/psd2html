@@ -1,0 +1,13 @@
+#howitworks .vcenter .img-container {
+  padding: 0; }
+  #howitworks .vcenter .img-container img {
+    max-width: 100%;
+    height: auto; }
+#howitworks h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase; }
+#howitworks p.excerpt {
+  font-size: 1.1em; }
+
+/*# sourceMappingURL=howitworks.css.map */

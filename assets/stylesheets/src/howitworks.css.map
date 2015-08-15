@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEC,mCAAc;EACb,OAAO,EAAE,CAAC;EACV,uCAAG;IACF,SAAS,EAAE,IAAI;IACf,MAAM,EAAC,IAAI;AAIb,cAAE;EACD,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,SAAS;AAE1B,qBAAS;EACR,SAAS,EAAC,KAAK",
+"sources": ["howitworks.scss"],
+"names": [],
+"file": "howitworks.css"
+}
