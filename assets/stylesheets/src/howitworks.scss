@@ -17,3 +17,38 @@
 		font-size:1.1em;
 	}
 }
+#howitworksaction{
+	background-image: url('../images/barley.jpg');
+    background-size:cover;
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    color:#FFF;
+    text-align:center;
+    padding: 10vh 0px;
+    .action-container{
+    	background-color:#88099f ;
+    }
+    h2{
+		margin-bottom: 0.5em;
+	}
+	p{
+		max-width: 50vw;
+		margin: 0 auto;
+	}	
+	 a {
+        font-size: 1.1em;
+        padding: 1em 3em;
+        border-radius: 1.5em;
+        font-weight: bold;
+        margin:1em 0;
+        display: inline-block;
+        &, &:hover {
+            background-color: #8724CD;
+            color: #FFF;
+            text-decoration: none;
+        }
+    }
+    .meta-info{
+    	font-size:0.7em;
+    }
+}

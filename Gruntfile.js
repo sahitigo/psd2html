@@ -6,7 +6,8 @@ module.exports=function(grunt){
           'assets/stylesheets/src/common.css': 'assets/stylesheets/src/common.scss',
           'assets/stylesheets/src/land.css': 'assets/stylesheets/src/land.scss',
           'assets/stylesheets/src/about.css': 'assets/stylesheets/src/about.scss',
-          'assets/stylesheets/src/howitworks.css': 'assets/stylesheets/src/howitworks.scss'       // 'destination': 'source' 
+          'assets/stylesheets/src/howitworks.css': 'assets/stylesheets/src/howitworks.scss',
+          'assets/stylesheets/src/services.css': 'assets/stylesheets/src/services.scss'       // 'destination': 'source' 
         }
       }
     },
@@ -30,7 +31,8 @@ module.exports=function(grunt){
               'assets/stylesheets/src/common.css',
               'assets/stylesheets/src/land.css',
               'assets/stylesheets/src/about.css',
-              'assets/stylesheets/src/howitworks.css'
+              'assets/stylesheets/src/howitworks.css',
+              'assets/stylesheets/src/services.css'
             ]
        }
       }
