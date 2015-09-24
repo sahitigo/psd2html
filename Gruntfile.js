@@ -3,18 +3,48 @@ module.exports=function(grunt){
     sass: {                              // Task 
       dist:{
         files: {                         // Dictionary of files 
-        'assets/stylsheets/styles.css': 'assets/stylsheets/src/styles.scss'       // 'destination': 'source' 
+          'assets/stylesheets/src/common.css': 'assets/stylesheets/src/common.scss',
+          'assets/stylesheets/src/land.css': 'assets/stylesheets/src/land.scss',
+          'assets/stylesheets/src/about.css': 'assets/stylesheets/src/about.scss',
+          'assets/stylesheets/src/howitworks.css': 'assets/stylesheets/src/howitworks.scss',
+          'assets/stylesheets/src/services.css': 'assets/stylesheets/src/services.scss',
+          'assets/stylesheets/src/faq.css': 'assets/stylesheets/src/faq.scss',
+          'assets/stylesheets/src/contact.css': 'assets/stylesheets/src/contact.scss'       // 'destination': 'source' 
         }
       }
     },
     watch: {
       css: {
-        files: ['assets/stylsheets/src/*.scss'],
-        tasks: ['sass']
+        files: ['assets/stylesheets/src/*.scss'],
+        tasks: ['sass','cssmin']
+      }
+    },
+      //concat: {
+    //    css: {
+     //     src: ['assets/stylesheets/src/common.css', 'assets/stylesheets/src/land.scss'],
+     //     dest: 'assets/stylesheets/app.css',
+     //   },
+    //},
+    cssmin: {
+      target: {
+        files: {
+           'assets/stylesheets/app.min.css':
+            [
+              'assets/stylesheets/src/common.css',
+              'assets/stylesheets/src/land.css',
+              'assets/stylesheets/src/about.css',
+              'assets/stylesheets/src/howitworks.css',
+              'assets/stylesheets/src/services.css',
+              'assets/stylesheets/src/faq.css',
+              'assets/stylesheets/src/contact.css'
+            ]
+       }
       }
     }
   });
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.registerTask('default',['sass','watch']);
+//  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.registerTask('default',['sass','cssmin','watch']);
 };  
