@@ -1,0 +1,13 @@
+#faq .vcenter .img-container {
+  padding: 0; }
+  #faq .vcenter .img-container img {
+    max-width: 100%;
+    height: auto; }
+#faq h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase; }
+#faq p.excerpt {
+  font-size: 1.1em; }
+
+/*# sourceMappingURL=faq.css.map */

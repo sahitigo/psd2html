@@ -4,7 +4,12 @@ module.exports=function(grunt){
       dist:{
         files: {                         // Dictionary of files 
           'assets/stylesheets/src/common.css': 'assets/stylesheets/src/common.scss',
-          'assets/stylesheets/src/land.css': 'assets/stylesheets/src/land.scss'       // 'destination': 'source' 
+          'assets/stylesheets/src/land.css': 'assets/stylesheets/src/land.scss',
+          'assets/stylesheets/src/about.css': 'assets/stylesheets/src/about.scss',
+          'assets/stylesheets/src/howitworks.css': 'assets/stylesheets/src/howitworks.scss',
+          'assets/stylesheets/src/services.css': 'assets/stylesheets/src/services.scss',
+          'assets/stylesheets/src/faq.css': 'assets/stylesheets/src/faq.scss',
+          'assets/stylesheets/src/contact.css': 'assets/stylesheets/src/contact.scss'       // 'destination': 'source' 
         }
       }
     },
@@ -23,7 +28,16 @@ module.exports=function(grunt){
     cssmin: {
       target: {
         files: {
-          'assets/stylesheets/app.min.css': ['assets/stylesheets/src/common.css', 'assets/stylesheets/src/land.css']
+           'assets/stylesheets/app.min.css':
+            [
+              'assets/stylesheets/src/common.css',
+              'assets/stylesheets/src/land.css',
+              'assets/stylesheets/src/about.css',
+              'assets/stylesheets/src/howitworks.css',
+              'assets/stylesheets/src/services.css',
+              'assets/stylesheets/src/faq.css',
+              'assets/stylesheets/src/contact.css'
+            ]
        }
       }
     }
